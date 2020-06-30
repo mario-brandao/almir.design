@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'almir-design';
+  public routeClass = '';
+
+  // ngOnInit() {
+  //   this.setRouteClass();
+  // }
+
 }

@@ -1,0 +1,46 @@
+
+// ======================
+// Global
+// ======================
+
+$global-font-family: 'Montserrat', sans-serif;
+
+// ======================
+// Break points constants
+// ======================
+
+$sm: 425px;
+$md: 768px;
+$lg: 1024px;
+$xlg: 1280px;
+$xxlg: 1440px;
+
+// ======================
+// Font wheight constants
+// ======================
+
+$thin: 100;
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+// ======================
+// Color variables
+// ======================
+
+$blue: #0076FF;
+$green: #46BE82;
+$black: #171717;
+$gray-dark: #2B2B2B;
+$gray-medium: #7E7E7E;
+$gray-light: #E0E0E0;
+$gray-lighter: #F2F2F2;
+$white: #FFFFFF;
+
+$primary-color: $blue;
+$secondary-color: $green;

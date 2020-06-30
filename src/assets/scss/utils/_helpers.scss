@@ -1,0 +1,23 @@
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+@media (min-width: $md) {
+  .hide-desktop {
+    display: none !important;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../../assets/scss/utils/variables';
+
+.introduction {
+  .introduction-title {
+    font-size: 11.8rem;
+    font-weight: $black;
+    .title-block {
+      display: block;
+    }
+  }
+}
