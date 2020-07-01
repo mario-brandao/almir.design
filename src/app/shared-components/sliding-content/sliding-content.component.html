@@ -1,1 +1,10 @@
-<h3 *ngFor="let i of [1, 2, 3]" class="sliding-content">Embrace the complexity</h3>
+<div class="sliding-content-wrapper">
+  <h3 
+    *ngFor="let i of [0, 1, 2]"
+    [ngStyle]="{'transition-delay.s': i * .3}"
+    class="sliding-content wow fadeInRight">
+    <span class="slide-item">Embrace the complexity</span>
+    <span class="slide-item">Embrace the complexity</span>
+    <!-- <span class="slide-item">Embrace the complexity</span> -->
+  </h3>
+</div>

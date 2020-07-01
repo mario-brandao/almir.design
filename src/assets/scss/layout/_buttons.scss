@@ -1,0 +1,88 @@
+
+
+
+$default-bg-color: $primary-color;
+$default-border-color: $default-bg-color;
+$default-color: $white;
+
+$hover-bg-color: $white;
+$hover-color: $primary-color;
+
+$visited-bg-color: $default-bg-color;
+$visited-color: $default-color;
+
+$focus-bg-color: transparent;
+$focus-color: $primary-color;
+
+$disabled-bg-color: $gray-dark;
+$disabled-border-color: $gray-dark;
+$disabled-color: $gray-medium;
+
+
+
+.btn-primary {
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+  border-radius: 34px;
+  backface-visibility: hidden;
+  border: 2px solid $default-border-color;
+  background: $default-bg-color;
+  color: $default-color;
+  font-size: 2.2rem;
+  font-weight: $medium;
+  text-align: center;
+  padding: 2rem 5rem;
+  overflow: hidden;
+  transition: color .3s ease, box-shadow .3s ease, border .3s ease;
+  &:before, &:after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    height: 100%;
+    width: 100%;
+    transition: transform .3s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  }
+  &:before {
+    background: #97c7ff;
+  }
+  &:after {
+    background: $hover-bg-color;
+  }
+  
+  &:hover {
+    color: $hover-color;
+    &:before, &:after {
+      transform: translate3d(0, 100%, 0);
+    }
+    &:after {
+      transition-delay: 0.175s;
+    }
+  }
+  
+  &:visited { // maintain default colors if visited
+    color: $default-color;
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  
+  &:active {
+    box-shadow: 0px 3px 6px 0px rgba($blue, .2);
+  }
+
+  &:focus {
+    background: $focus-bg-color;
+    border: none;
+    color: $focus-color;
+  }
+
+  &:disabled {
+    background: $disabled-bg-color;
+    border-color: $disabled-border-color;
+    color: $disabled-color;
+  }
+}

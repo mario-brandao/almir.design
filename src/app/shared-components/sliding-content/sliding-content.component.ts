@@ -12,4 +12,8 @@ export class SlidingContentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getLineDelay(i: number) {
+    return `.${i *  0.6}s`;
+  }
+
 }

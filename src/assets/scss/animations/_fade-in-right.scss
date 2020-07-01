@@ -1,0 +1,9 @@
+.fadeInRight {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: transform .6s ease, opacity .6s ease;
+  &.animated {
+    transform: none;
+    opacity: 1;
+  }
+}
